@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-const gold = "#C29F61";
 
 const Home = () => {
   return (

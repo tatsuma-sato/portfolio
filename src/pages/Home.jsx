@@ -7,12 +7,11 @@ const Home = () => {
   return (
     <>
       <div
-        className="bg-blend-overlay text-white bg-gray-700 bg-no-repeat bg-center bg-cover h-screen relative"
+        className="bg-blend-overlay text-white bg-gray-700 bg-no-repeat bg-center bg-cover w-screen relative"
         style={{
           backgroundImage:
             "url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80)",
-          width: "100vw",
-          height: "calc(100vh - 100px)",
+          height: "calc(100vh - 96px)",
         }}
       >
         <div className="absolute inset-0 opacity-90 h-full flex flex-col">

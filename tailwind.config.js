@@ -5,6 +5,7 @@ module.exports = {
       colors: {
         gold: "#C29F61",
         lightBlack: "#181818",
+        darkGray: "#333333",
       },
     },
   },
