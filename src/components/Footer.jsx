@@ -7,11 +7,11 @@ const year = new Date().getFullYear();
 const Footer = () => {
   return (
     <footer className="text-center text-white bg-darkGray">
-      <div className="container py-5">
-        <div className="flex w-28 justify-between">
+      <div className="container mx-auto w-full py-5 text-center">
+        <div className="flex w-full justify-center">
           <Link
             to=""
-            className="mr-9"
+            className="mx-5 text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -19,7 +19,7 @@ const Footer = () => {
           </Link>
           <Link
             to=""
-            className="mr-9"
+            className="mx-5 text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -27,7 +27,7 @@ const Footer = () => {
           </Link>
           <Link
             to=""
-            className="mr-9"
+            className="mx-5 text-2xl"
             target="_blank"
             rel="noopener noreferrer"
           >

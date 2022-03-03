@@ -4,7 +4,20 @@ import { useGlobalContext } from "../context/context";
 import { works } from "../work/works";
 
 const Work = () => {
-  // const [isModalOpen, setIsModalOpen] = useState(false);
+  const onMouseOver = (e) => {
+    const targetDiv = e.target.parentNode;
+    const text = targetDiv.lastChild;
+    text.classList.add("block");
+    text.classList.remove("hidden");
+  };
+
+  const onMouseLeave = (e) => {
+    const targetDiv = e.target.parentNode;
+    const text = targetDiv.lastChild;
+    text.classList.remove("block");
+    text.classList.add("hidden");
+
+  };
 
   const { workData, setWorkData } = useGlobalContext();
 
@@ -16,14 +29,21 @@ const Work = () => {
           {works.map((work) => {
             return (
               <div className="text-wihte basis-5/12 mb-12" key={work.id}>
-                <div className="cursor-pointer overflow-hidden h-80">
+                <div
+                  className="cursor-pointer overflow-hidden h-80 relative"
+                  onMouseOver={onMouseOver}
+                  onMouseLeave={onMouseLeave}
+                >
                   <img
                     src={work.image}
-                    className="h-full w-full hover:scale-125 transition duration-300"
+                    className="h-full w-full hover:scale-125 hover:opacity-50 transition duration-500"
                     alt=""
                     onClick={() => setWorkData(work)}
                     data-modal-toggle="defaultModal"
                   />
+                  <p className="absolute hidden font-bold text-2xl text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    Read More
+                  </p>
                 </div>
                 <h1>{work.title}</h1>
               </div>
