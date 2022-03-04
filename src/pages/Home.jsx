@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="bg-blend-overlay text-white bg-gray-700 bg-no-repeat bg-center bg-cover w-screen h-full relative"
+        className="h-full text-white bg-gray-700 bg-no-repeat bg-center bg-cover w-screen relative grow"
         style={{
           backgroundImage:
             "url(https://images.unsplash.com/photo-1537498425277-c283d32ef9db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1178&q=80)",
@@ -15,13 +15,13 @@ const Home = () => {
       >
         <div className="absolute inset-0 opacity-90 h-full flex flex-col">
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            <h1 className="font-bold text-gold text-center tracking-wider text-8xl mt-4">
+            <h1 className="font-bold text-reactBlue text-center tracking-wider text-8xl mt-4">
               Tatsuma Sato
             </h1>
 
             <p className="mt-3 pl-5 pr-5 text-4xl tracking-wide font-bold text-center">
               I am a{" "}
-              <span className="text-gold">
+              <span className="text-reactBlue">
                 <FaReact style={{ display: "inline-block" }} className="mr-1" />
                 React&nbsp;
               </span>
@@ -31,13 +31,13 @@ const Home = () => {
             <div className="mt-8 text-center flex justify-center gap-20">
               <a
                 href="#"
-                className="w-64 bg-black border-solid border-2 border-gold  hover:bg-gold hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded"
+                className="w-64 bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300"
               >
                 Download Resume
               </a>
               <Link
                 to="/about"
-                className="w-64 bg-black border-solid border-2 border-gold  hover:bg-gold hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded"
+                className="w-64 bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded transition-all duration-300"
               >
                 About Me
               </Link>

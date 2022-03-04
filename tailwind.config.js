@@ -6,6 +6,8 @@ module.exports = {
         gold: "#C29F61",
         lightBlack: "#181818",
         darkGray: "#333333",
+        reactBlue: "#61DAFB",
+        reactGray: "#282C34",
       },
     },
   },

@@ -38,7 +38,7 @@ const Form = () => {
       className="px-16 py-20 text-white text-center"
     >
       <div className="form-container mb-8 flex justify-center">
-        <div className="form-left flex flex-col justify-between w-96 px-7">
+        <div className="form-left flex flex-col justify-between basis-5/12 px-7">
           <div className="mb-12">
             <input
               type="text"
@@ -80,17 +80,18 @@ const Form = () => {
           </div>
         </div>
 
-        <div className="form-right w-96 px-7">
+        <div className="form-right basis-5/12 px-7">
           <textarea
             id="message"
             name="message"
             rows="4"
-            className="bg-black border border-black text-gray-900 text-sm h-full hover:border-white   hover:ring-white focus:border-gold focus:outline-none focus:ring-gold block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+            className="bg-black border border-black  text-sm h-full block w-full text-white p-2.5hover:border-white hover:border-white focus:border-gold focus:outline-none focus:ring-gold  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
             placeholder:text-gray-400 transition-all duration-300
             "
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="Message"
+            
           ></textarea>
         </div>
       </div>

@@ -10,24 +10,24 @@ const Footer = () => {
       <div className="container mx-auto w-full py-5 text-center">
         <div className="flex w-full justify-center">
           <Link
-            to=""
-            className="mx-5 text-2xl"
+            to="https://www.facebook.com/tatsuma.sato.98"
+            className="mx-5 text-2xl hover:text-reactBlue trainsition-all duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaFacebook />
           </Link>
           <Link
-            to=""
-            className="mx-5 text-2xl"
+            to="https://github.com/tatsuma-sato"
+            className="mx-5 text-2xl hover:text-reactBlue trainsition-all duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
             <FaGithub />
           </Link>
           <Link
-            to=""
-            className="mx-5 text-2xl"
+            to="https://www.linkedin.com/in/tatsuma-sato/"
+            className="mx-5 text-2xl hover:text-reactBlue trainsition-all duration-300"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -35,7 +35,7 @@ const Footer = () => {
           </Link>
         </div>
       </div>
-      <div className="text-center p-4">&copy; copyright {year} &nbsp;</div>
+      <div className="text-center p-4">&copy; Tatsuma Sato {year} &nbsp;</div>
     </footer>
   );
 };

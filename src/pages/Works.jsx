@@ -16,10 +16,9 @@ const Work = () => {
     const text = targetDiv.lastChild;
     text.classList.remove("block");
     text.classList.add("hidden");
-
   };
 
-  const { workData, setWorkData } = useGlobalContext();
+  const { setWorkData } = useGlobalContext();
 
   return (
     <section className="bg-black w-screen text-white h-full">
@@ -41,8 +40,8 @@ const Work = () => {
                     onClick={() => setWorkData(work)}
                     data-modal-toggle="defaultModal"
                   />
-                  <p className="absolute hidden font-bold text-2xl text-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                    Read More
+                  <p className="absolute hidden font-bold text-2xl text-reactBlue top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    Details
                   </p>
                 </div>
                 <h1>{work.title}</h1>
