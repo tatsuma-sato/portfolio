@@ -14,12 +14,12 @@ const Home = () => {
         }}
       >
         <div className="absolute inset-0 opacity-90 h-full flex flex-col">
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-            <h1 className="font-bold text-reactBlue text-center tracking-wider text-8xl mt-4">
+          <div className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+            <h1 className="font-bold text-reactBlue text-center tracking-wider text-4xl xl:text-8xl md:text-7xl mt-4  ">
               Tatsuma Sato
             </h1>
 
-            <p className="mt-3 pl-5 pr-5 text-4xl tracking-wide font-bold text-center">
+            <p className="mt-3 pl-5 pr-5 text-base xl:text-4xl md:text-3xl tracking-wide font-bold text-center">
               I am a{" "}
               <span className="text-reactBlue">
                 <FaReact style={{ display: "inline-block" }} className="mr-1" />
@@ -28,16 +28,16 @@ const Home = () => {
               Developer
             </p>
 
-            <div className="mt-8 text-center flex justify-center gap-20">
+            <div className="mt-8 text-center flex  flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
               <a
                 href="#"
-                className="w-64 bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300"
+                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300 "
               >
                 Download Resume
               </a>
               <Link
                 to="/about"
-                className="w-64 bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded transition-all duration-300"
+                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded transition-all duration-300  "
               >
                 About Me
               </Link>

@@ -4,25 +4,25 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <nav
-      className="bg-black flex border-gray-200 h-24  px-2 sm:px-4 py-2.5 dark:bg-gray-800"
+      className="bg-reactGray flex border-gray-200 h-24  lg:px-2 sm:px-4 md:px-6 py-2.5 z-10"
       style={{ minHeight: "100px" }}
     >
-      <div className="container flex flex-wrap justify-between min-h-full items-center mx-auto">
-        <Link to="/" className="flex">
-          <span className="self-center text-reactBlue text-lg font-semibold whitespace-nowrap text-3xl dark:text-white">
+      <div className="container flex flex-wrap min-h-full justify-between min-h-full items-center mx-auto md:px-4">
+        <Link to="/" className="flex min-h-full">
+          <span className="px-6  self-center text-reactBlue font-semibold whitespace-nowrap lg:text-3xl md:text-xl dark:text-white">
             Tatsuma Sato
           </span>
         </Link>
         <button
           data-collapse-toggle="mobile-menu"
           type="button"
-          className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 px6 ml-3 text-sm text-gray-500 rounded-lg md:hidden  focus:outline-none"
           aria-controls="mobile-menu-2"
           aria-expanded="false"
         >
           <span className="sr-only">Open main menu</span>
           <svg
-            className="w-6 h-6"
+            className="w-6 h-6 text-reactBlue"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -47,11 +47,11 @@ const Home = () => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
-          <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+          <ul className="flex flex-col lg:mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:mt-0">
             <li>
               <Link
                 to={"/"}
-                className="block py-2 pr-4 pl-3 text-white text-2xl hover:text-reactBlue md:bg-transparent md:text-white md:p-0 dark:text-white transition-all duration-300"
+                className="block bg-reactGray py-2 px-6 md:pr-4 md:pl-3 text-white lg:text-2xl md:text-xl hover:text-reactBlue md:bg-transparent md:text-white md:p-0 dark:text-white transition-all duration-300 "
                 aria-current="page"
               >
                 Home
@@ -60,7 +60,7 @@ const Home = () => {
             <li>
               <Link
                 to="/about"
-                className="block py-2 pr-4 pl-3 text-white text-2xl hover:text-reactBlue hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all duration-300"
+                className="block bg-reactGray md:bg-inherit py-2 px-6 md:pr-4 md:pl-3 text-white lg:text-2xl md:text-xl hover:text-reactBlue  md:hover:bg-transparent md:border-0 md:p-0 transition-all duration-300"
               >
                 About
               </Link>
@@ -68,7 +68,7 @@ const Home = () => {
             <li>
               <Link
                 to="/work"
-                className="block py-2 pr-4 pl-3 text-white text-2xl hover:text-reactBlue md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 transition-all duration-300"
+                className="block bg-reactGray md:bg-inherit py-2 px-6 md:pr-4 md:pl-3 text-white lg:text-2xl md:text-xl hover:text-reactBlue md:hover:bg-transparent md:border-0 md:p-0 transition-all duration-300"
               >
                 Work
               </Link>
@@ -76,7 +76,7 @@ const Home = () => {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 pr-4 pl-3 text-white text-2xl  hover:text-reactBlue md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent transition-all duration-300"
+                className="block bg-reactGray md:bg-inherit py-2 px-6 md:pr-4 md:pl-3 text-white lg:text-2xl md:text-xl  hover:text-reactBlue md:hover:bg-transparent md:border-0 md:p-0 dark:text-gray-400 transition-all duration-300"
               >
                 Contact
               </Link>

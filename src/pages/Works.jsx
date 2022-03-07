@@ -21,15 +21,15 @@ const Work = () => {
   const { setWorkData } = useGlobalContext();
 
   return (
-    <section className="bg-black w-screen text-white h-full">
-      <h1 className="text-2xl font-bold mb-4">Works</h1>
-      <main>
-        <div className="flex flex-wrap justify-between">
+    <section className="bg-black w-screen grow text-white h-full py-5">
+      <h1 className="lg:text-2xl md:text-xl font-bold mb-4">Works</h1>
+      <main className="px-4 md:px-0">
+        <div className="flex flex-col md:flex-row flex-wrap justify-between">
           {works.map((work) => {
             return (
               <div className="text-wihte basis-5/12 mb-12" key={work.id}>
                 <div
-                  className="cursor-pointer overflow-hidden h-80 relative"
+                  className="cursor-pointer overflow-hidden lg:h-80 md:h-48 relative"
                   onMouseOver={onMouseOver}
                   onMouseLeave={onMouseLeave}
                 >

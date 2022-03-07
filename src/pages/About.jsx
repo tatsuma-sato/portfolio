@@ -5,15 +5,12 @@ import { FaReact } from "react-icons/fa";
 const About = () => {
   return (
     <section className="bg-black w-screen text-white h-full py-5">
-      <h1 className="text-2xl">About Me</h1>
-      <main className="pt-5 relative px-5 flex my-5 justify-between">
+      <h1 className="lg:text-2xl font-bold md:text-xl">About Me</h1>
+      <main className="pt-5 relative px-5 flex xl:flex-row flex-col flex-col-reverse gap-10 my-5 justify-between">
         <div className="about-left basis-1/2">
           <div className="">
-            <div
-              className="bg-darkGray rounded-2xl h-3/4"
-              // style={{ height: "650px", width: "550px" }}
-            >
-              <p className="p-10 leading-relaxed">
+            <div className="bg-darkGray rounded-2xl h-3/4">
+              <p className="p-5 lg:p-10 text-xs sm:text-sm md:text-base leading-relaxed">
                 Hello! I am Tatsuma Sato, a highly motivated{" "}
                 <span className="text-reactBlue font-bold">
                   <FaReact className="inline" />
