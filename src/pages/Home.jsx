@@ -31,7 +31,7 @@ const Home = () => {
             <div className="mt-8 text-center flex  flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
               <a
                 href="#"
-                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300 "
+                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300 line-through decoration-4"
               >
                 Download Resume
               </a>
