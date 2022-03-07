@@ -13,6 +13,7 @@ const NotFound = () => {
     bg-black
     from-indigo-600
     to-blue-400
+    grow
   "
     >
       <div className="px-40 py-20 bg-black">
