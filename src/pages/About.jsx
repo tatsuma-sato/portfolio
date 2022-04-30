@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../images/my_image.png";
+import avatar from "../images/avatar.png";
 import { FaReact } from "react-icons/fa";
 
 const About = () => {
@@ -22,12 +23,7 @@ const About = () => {
                 Growing up, I was given a computer by my father, and ever since
                 then, computers and the internet have always been around me. It
                 has been less than 20 years since then, but the IT industry has
-                come a long way, and I have used many computers, and as new
-                computers became available, even higher specifications were
-                developed. There are even smart phones, computers that you can
-                carry around with you, so to speak, which was unimaginable when
-                I was a child. It is no exaggeration to say that we cannot live
-                without the Internet in this day and age. <br />
+                come a long way <br />
                 <br />
                 In the process, when I was in junior high school, I created my
                 own profile page on a website creation service. I didn't have
@@ -60,7 +56,8 @@ const About = () => {
 
         <div className="about-right flex basis-1/2 justify-center items-center">
           <div className="w-auto h-auto w-96 h-96">
-            <img className="rounded-full h-full w-full" src={image} alt="" />
+            {/* <img className="rounded-full h-full w-full" src={image} alt="" /> */}
+            <img className="rounded-full h-full w-full" src={avatar} alt="" />
           </div>
         </div>
       </main>

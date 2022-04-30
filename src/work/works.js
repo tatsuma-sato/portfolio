@@ -39,4 +39,53 @@ export const works = [
       "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220303/20220303140407.png",
     skills: "React, React-router-dom, Context, Sass",
   },
+  {
+    id: 5,
+    title: "React Weather App",
+    url: "https://boisterous-gaufre-15ea4c.netlify.app",
+    description:
+      "This is a React weather app You can search weather at the location you type. Using open weather api",
+    image:
+      "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220430/20220430021835.png",
+    skills: "React, API",
+  },
+  {
+    id: 6,
+    title: "React Netflix clone",
+    url: "https://chic-biscochitos-0263c6.netlify.app",
+    description: "This is a netflix clone site by react and firebase",
+    image:
+      "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220430/20220430022103.png",
+    skills: "React, React-router-dom, styled-components, firebase",
+  },
+  {
+    id: 7,
+    title: "House marketplace app",
+    url: "https://stellar-dusk-05f8d6.netlify.app",
+    description:
+      "This is a house marketplace CRUD application using react and firebase",
+    image:
+      "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220430/20220430022311.png",
+    skills: "React, React-router-dom, Context, Sass",
+  },
+  {
+    id: 8,
+    title: "eCommerce app",
+    url: "https://comforting-malabi-102f84.netlify.app/",
+    description:
+      "This is a house marketplace CRUD application using react and firebase",
+    image:
+      "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220430/20220430022414.png",
+    skills: "React, React-router-dom, Context, Sass",
+  },
+  {
+    id: 9,
+    title: "github finder app",
+    url: "https://resplendent-torte-886e11.netlify.app",
+    description:
+      "Enter a name and you will be searched among GITHUB users. You can also browse details.",
+    image:
+      "https://cdn-ak.f.st-hatena.com/images/fotolife/K/Kenkentan/20220430/20220430023007.png",
+    skills: "React, React-router-dom, Context, Sass",
+  },
 ];

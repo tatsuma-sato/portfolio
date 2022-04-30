@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import Modal from "../components/Modal";
+import Work from "../components/Work";
 import { useGlobalContext } from "../context/context";
 import { works } from "../work/works";
 
-const Work = () => {
+const Works = () => {
   const onMouseOver = (e) => {
     const targetDiv = e.target.parentNode;
     const text = targetDiv.lastChild;
@@ -55,4 +56,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Works;

@@ -30,14 +30,14 @@ const Home = () => {
 
             <div className="mt-8 text-center flex  flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
               <a
-                href="#"
-                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300 line-through decoration-4"
+                href="https://drive.google.com/file/d/1j5o9Fcf67_zSuJxmqm9fJgaQg265kEc-/view?usp=sharing"
+                className="w-52 lg:w-64 md:w-52 md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black hover:border-solid  hover:border-2 text-white font-bold text-center text-2xl py-2 px-4 rounded transition-all duration-300 decoration-4"
               >
                 Download Resume
               </a>
               <Link
                 to="/about"
-                className="w-52 lg:w-64 md:w-52 text-base md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded transition-all duration-300  "
+                className="w-52 lg:w-64 md:w-52  md:text-lg bg-black border-solid border-2 border-reactBlue  hover:bg-reactBlue hover:text-black text-white text-2xl font-bold text-center py-2 px-4 rounded transition-all duration-300  "
               >
                 About Me
               </Link>

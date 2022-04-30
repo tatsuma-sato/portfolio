@@ -67,7 +67,7 @@ const Home = () => {
             </li>
             <li>
               <Link
-                to="/work"
+                to="/works"
                 className="block bg-reactGray md:bg-inherit py-2 px-6 md:pr-4 md:pl-3 text-white lg:text-2xl md:text-xl hover:text-reactBlue md:hover:bg-transparent md:border-0 md:p-0 transition-all duration-300"
               >
                 Work
