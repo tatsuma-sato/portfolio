@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { FaUserAlt } from "react-icons/fa";
 import validator from "validator";
+import { FormStyle } from "../assets/styles/form";
 
 const userID = process.env.REACT_APP_EMAILJS_USER_ID;
 const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -40,7 +41,7 @@ const Form = () => {
       return;
     }
 
-    if (!validator.isEmail(email)) {
+    if (validator.isEmail(email) === false) {
       setEmailError(true);
     } else {
       setEmailError(false);
@@ -57,7 +58,7 @@ const Form = () => {
       return;
     }
 
-    if (!validator.isMobilePhone(phone, "en-CA")) {
+    if (validator.isMobilePhone(phone, "en-CA") === false) {
       setPhoneError(true);
     } else {
       setPhoneError(false);
@@ -65,17 +66,12 @@ const Form = () => {
   };
 
   return (
-    <form
-      ref={form}
-      onSubmit={handleSubmit}
-      className="lg:px-16 lg:py-20 px-8 py-10 text-white text-center"
-    >
-      <div className="form-container mb-8 flex justify-center lg:justify-around xl:justify-center lg:flex-row flex-col">
-        <div className="form-left flex flex-col justify-between basis-5/12 md:px-7 lg:px-0 xl:px-7">
-          <div className="mb-12 relative">
-            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+    <FormStyle ref={form} onSubmit={handleSubmit} className="">
+      <div className="form-content">
+        <div className="form-left">
+          <div className="form-content">
+            <div className="label-logo">
               <svg
-                className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -93,18 +89,16 @@ const Form = () => {
               type="text"
               id="name"
               name="name"
-              className="bg-black border text-white border-black  text-sm hover:border-white   hover:ring-white focus:border-reactBlue focus:outline-none focus:ring-reactBlue block w-full p-2.5 pl-10
-              placeholder-gray-400 transition-all duration-300"
+              className="form-input"
               placeholder="Name"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
             />
           </div>
-          <div className="mb-12 relative">
-            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <div className="form-content">
+            <div className="label-logo">
               <svg
-                className="w-6 h-6 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -117,12 +111,7 @@ const Form = () => {
               type="email"
               name="email"
               id="email"
-              className={`bg-black border border-black  text-sm hover:border-white   hover:ring-white focus:border-reactBlue focus:outline-none focus:ring-reactBlue block w-full p-2.5 pl-10
-              placeholder-gray-400 transition-all duration-300 peer ${
-                emailError
-                  ? "invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
-                  : null
-              }`}
+              className={`form-input ${emailError ? "invalid" : null}`}
               placeholder="Email"
               value={email}
               onChange={(e) => {
@@ -132,10 +121,9 @@ const Form = () => {
               required
             />
           </div>
-          <div className="mb-12 relative lg:mb-0">
-            <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <div className="form-content mb-0">
+            <div className="label-logo">
               <svg
-                className="w-5 h-5 text-gray-400"
                 fill="currentColor"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -153,11 +141,7 @@ const Form = () => {
               id="phone"
               name="phone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              className={`bg-black border border-black  text-sm hover:border-white   hover:ring-white focus:border-reactBlue focus:outline-none focus:ring-reactBlue block w-full p-2.5 pl-10 placeholder-gray-400 transition-all duration-300 ${
-                phoneError
-                  ? "invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
-                  : null
-              }`}
+              className={`form-input ${phoneError ? "invalid" : null}`}
               placeholder="Phone number (123-456-7890)"
               value={phone}
               onChange={(e) => {
@@ -169,11 +153,10 @@ const Form = () => {
           </div>
         </div>
 
-        <div className="form-right relative basis-5/12 md:px-7 lg:px-0 xl:px-7">
-          <div className="relative">
-            <div className="flex absolute top-3 left-0 items-center pl-3 pointer-events-none">
+        <div className="form-right">
+          <div className="form-right-container">
+            <div className="form-right-logo">
               <svg
-                className="w-5 h-5 text-gray-400"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -191,8 +174,7 @@ const Form = () => {
               id="message"
               name="message"
               rows="4"
-              className="bg-black border border-black  text-sm h-full block w-full text-white p-2.5 pl-10 hover:border-white hover:border-white focus:border-reactBlue focus:outline-none focus:ring-reactBlue  md:h-64 placeholder:text-gray-400 transition-all duration-300
-            "
+              className="form-textarea"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               required
@@ -204,14 +186,13 @@ const Form = () => {
 
       <button
         type="submit"
-        className="text-gray-400 bg-black mx-auto border-2 border-black hover:text-reactBlue hover:border-reactBlue focus:ring-4 focus:ring-blue-300 font-medium text-sm  sm:w-auto px-5 py-2.5 text-center  transition-all duration-300 cursor-pointer disabled:hover:border-black disabled:hover:text-gray-400 disabled:focus:ring-black
-        disabled:cursor-not-allowed"
+        className="btn"
         onSubmit={handleSubmit}
         disabled={!name || !email || !phone || !message}
       >
         Send Message
       </button>
-    </form>
+    </FormStyle>
   );
 };
 

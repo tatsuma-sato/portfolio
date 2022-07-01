@@ -6,6 +6,18 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
+:root {
+  --reactBlue: #61dafb;
+  --reactGray: #282c34;
+  --gold: #c29f61;
+  --lightBlack: #181818;
+  --darkGray: #333333;
+}
+
 section {
   padding: 0 10%;
 }

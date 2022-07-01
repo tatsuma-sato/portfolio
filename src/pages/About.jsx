@@ -1,20 +1,27 @@
 import React from "react";
 import image from "../images/my_image.png";
 import avatar from "../images/avatar.png";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { DiJavascript1 } from "react-icons/di";
+import { Wrapper } from "../assets/styles/about";
+import firebaseIcon from "../images/firebase-icon.svg";
+import mongoDBIcon from "../images/mongodb-icon.svg";
+import htmlIcon from "../images/html-1.svg";
+import cssIcon from "../images/css-3.svg";
+import reactIcon from "../images/react-2.svg";
 
 const About = () => {
   return (
-    <section className="bg-black w-screen text-white h-full py-5">
-      <h1 className="lg:text-2xl font-bold md:text-xl">About Me</h1>
-      <main className="pt-5 relative px-5 flex xl:flex-row flex-col flex-col-reverse gap-10 my-5 justify-between">
+    <Wrapper className="">
+      <h1 className="section-title">About Me</h1>
+      <main className="content">
         <div className="about-left basis-1/2">
           <div className="">
-            <div className="bg-darkGray rounded-2xl h-3/4">
-              <p className="p-5 lg:p-10 text-xs sm:text-sm md:text-base leading-relaxed">
+            <div className="about-left-content">
+              <p>
                 Hello! I am Tatsuma Sato, a highly motivated{" "}
-                <span className="text-reactBlue font-bold">
-                  <FaReact className="inline" />
+                <span>
+                  <FaReact style={{ display: "inline" }} />
                   React &nbsp;
                 </span>
                 deployer.
@@ -54,14 +61,24 @@ const About = () => {
           </div>
         </div>
 
-        <div className="about-right flex basis-1/2 justify-center items-center">
-          <div className="w-auto h-auto w-96 h-96">
+        <div className="about-right">
+          <div className="about-right-image">
             {/* <img className="rounded-full h-full w-full" src={image} alt="" /> */}
-            <img className="rounded-full h-full w-full" src={avatar} alt="" />
+            <img src={image} alt="" />
+          </div>
+          <div className="skills">
+            <h1>Skills</h1>
+            <div className="image-container">
+              <img src={htmlIcon} alt="" className="skill-icon" />
+              <img src={cssIcon} alt="" className="skill-icon" />
+              <img src={reactIcon} alt="" className="skill-icon" />
+              <img src={firebaseIcon} alt="" className="skill-icon" />
+              <img src={mongoDBIcon} alt="" className="skill-icon" />
+            </div>
           </div>
         </div>
       </main>
-    </section>
+    </Wrapper>
   );
 };
 
