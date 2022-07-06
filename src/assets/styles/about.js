@@ -7,6 +7,7 @@ export const Wrapper = styled.section`
   color: #ffffff;
   width: 100vw;
   height: 100%;
+  flex-grow: 1;
   .section-title {
     font-weight: 700;
 
@@ -73,10 +74,24 @@ export const Wrapper = styled.section`
     .about-right-image {
       width: 24rem;
       height: 24rem;
+
       > img {
         width: 100%;
         height: 100%;
         border-radius: 9999px;
+      }
+
+      @media (max-width: 640px) {
+        height: 18rem;
+        width: 18rem;
+      }
+      @media (min-width: 768px) {
+        height: 20rem;
+        width: 20rem;
+      }
+      @media (min-width: 1024px) {
+        height: 18rem;
+        width: 18rem;
       }
     }
     .skills {
@@ -89,15 +104,39 @@ export const Wrapper = styled.section`
       > h1 {
         font-size: 1.25rem;
         margin-bottom: 0.75rem;
+        @media (max-width: 640px) {
+          font-size: 1rem;
+        }
+        @media (min-width: 768px) {
+        }
+        @media (min-width: 1024px) {
+        }
       }
       .image-container {
         display: flex;
         width: 20rem;
         justify-content: space-between;
+        @media (max-width: 640px) {
+          width: 100%;
+        }
+        @media (min-width: 768px) {
+          width: 100%;
+          justify-content: space-around;
+        }
+        @media (min-width: 1024px) {
+        }
         .skill-icon {
           width: 30px;
           height: 30px;
         }
+      }
+      @media (max-width: 640px) {
+        width: 300px;
+      }
+      @media (min-width: 768px) {
+        width: 100%;
+      }
+      @media (min-width: 1024px) {
       }
     }
   }

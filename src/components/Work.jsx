@@ -13,6 +13,7 @@ const Work = ({ work }) => {
   const handleClick = (e) => {
     setWorkData(work);
     setIsModalOpen(true);
+    setActive(false);
   };
 
   return (

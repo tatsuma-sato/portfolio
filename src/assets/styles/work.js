@@ -38,6 +38,7 @@ export const Wrapper = styled.div`
       color: var(--darkGray);
       margin: auto;
       cursor: pointer;
+      border-radius: 7.5px;
     }
     .active {
       display: block;

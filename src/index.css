@@ -27,3 +27,7 @@ section {
     padding: 0 15%;
   }
 }
+
+.section-title {
+  margin: 1rem 0 2rem 0;
+}

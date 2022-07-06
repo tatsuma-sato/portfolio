@@ -7,8 +7,10 @@ export const Wrapper = styled.section`
   color: #ffffff;
   width: 100vw;
   height: 100%;
+  flex-grow: 1;
   .section-title {
     font-weight: 700;
+    margin: 1rem 0 2rem 0;
 
     @media (min-width: 768px) {
       font-size: 1.25rem;
